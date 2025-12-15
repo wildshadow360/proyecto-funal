@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quinta Campestre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart-modal" id="cart-modal">
+    <h3>Tu Pedido</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: S/ <span id="cart-total">0.00</span></strong></p>
+    <button onclick="closeCart()">Cerrar</button>
+    </div>
+
+    <script src="cart.js"></script>
+
+
+    <header>
+        <h1>Quinta Campestre Chicarrneria Pachamama</h1>
+        <p>El mejor lugar para eventos, reuniones familiares y momentos especiales en un ambiente natural.</p>
+    </header>
+    
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#galeria">Galería</a>
+        <a href="menu">Nuestro Menu</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="cart">
+    🛒 Carrito (<span id="cart-count">0</span>)
+    </div>
+
+
+    <section id="nosotros">
+        <h2>Sobre la Quinta</h2>
+        <p>
+           "Nuestra Quinta Campestre es el refugio perfecto. Un espacio diseñado para crear momentos 
+           inolvidables, ideal para reuniones familiares, encuentros con amigos y la celebración 
+           de eventos especiales. ¡Ven a disfrutar de la naturaleza con todas las comodidades!"
+        </p>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Eventos familiares y sociales</li>
+            <li>Alquiler del local</li>
+            <li>Zona de barra</li>
+            <li>Ambientación rústica para fotos</li>
+        </ul>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="imagenes/foto 1.jpeg" alt="Foto 1">
+            <img src="imagenes/foto 2.jpeg" alt="Foto 2">
+            <img src="imagenes/foto 3.jpeg" alt="Foto 3">
+        </div>
+    </section>
+        <!-- =======================================
+         menu
+    ======================================= -->
+<section class="menu">
+    <h2 id="menu">Nuestro Menú</h2>
+
+    <div class="container-items">
+
+        <!-- Producto 1 -->
+        <div class="item">
+            <img src="imagenes/chancho.jpg" alt="chicharron de chancho">
+            <div class="info-product">
+                <h3>chicharron de chancho</h3>
+                <p>chancho crujiente por fuera y tierno por dentro, acompañado de papas, mote y ensalada fresca.</p>
+                <span class="price">S/ 20.00</span>
+                <button onclick="addToCart('chicharron de chancho', 20)">Agregar al pedido</button>
+
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="item">
+            <img src="imagenes/lechon.jpg" alt="Lechon de cordero">
+            <div class="info-product">
+                <h3>Lechon de cordero</h3>
+                <p>cordero 100% natural, acompañado con papas y ensalada.</p>
+                <span class="price">S/ 20.00</span>
+                <button onclick="addToCart('Lechon de cordero', 20)">Agregar al pedido</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="item">
+            <img src="imagenes/zarza.jpg" alt="zarza de cabeza">
+            <div class="info-product">
+                <h3>zarza de cabeza</h3>
+                <p>chancho, cebolla, vinagre tomate, aji amarillo.</p>
+                <span class="price">S/ 15.00</span>
+                <button onclick="addToCart('zarza de cabeza', 15)">Agregar al pedido</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: 985 729 255</p>
+        <p>Dirección: Tu ubicación aquí</p>
+        <p>Facebook: Quinta Campestre</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Quinta Campestre - Chicharroneria pachamama</p>
+    </footer>
+</body>
+</html>
